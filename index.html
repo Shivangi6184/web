@@ -10,58 +10,69 @@
             margin: 0;
             padding: 0;
             background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+            height: 100vh; 
         }
         /* Navigation Bar Styles */
         .navbar {
             background-color: #000;
-            
             padding: 10px 20px;
             display: flex;
             align-items: center;
+            width: 100%; 
         }
         .navbar .name {
-            color: orange;
+            color: orange; 
             font-weight: 600;
-            margin-right: auto;
+            margin-left: 50px; 
         }
         .navbar a {
             color: white;
             padding: 14px 20px;
-             }
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
         .navbar a:hover {
-            color: orange;
+            color: orange; 
         }
         /* Profile Section Styles */
-
-       .profile-container {
+        .profile-container {
             display: flex;
-            padding: 20px;
+            flex-direction: column;
             align-items: center;
+            justify-content: center; 
+            text-align: center; 
+            flex-grow: 1; 
+            margin-top: 20px; 
         }
         .profile-pic {
-            flex: 1;
-            text-align: center;
+            margin-bottom: 20px;
         }
         .profile-pic img {
             width: 200px; 
-            height: auto; 
-            border-radius: 80%; 
+            border-radius: 50%; 
+            border: 2px solid gray;
         }
         .profile-info {
-            flex: 2;
-            padding-left: 20px;
-            color: black;
+            max-width: 700px; 
         }
         .profile-info h1 {
             margin: 0;
-            color: orange;
+            color: orange; 
+            font-size: 2.5em; 
         }
         .profile-info h2 {
-            margin: 5px 0;
-            color: black;
+            margin: 20px 0; 
+            color: #4A4A4A; 
+            font-size: 1.5em; 
         }
         .profile-info p {
-            color: black;
+            color: #4A4A4A; 
+            font-size: 1.1em; 
         }
     </style>
 </head>
@@ -70,19 +81,19 @@
     <!-- Navigation Bar -->
     <div class="navbar">
         <span class="name">Shiv<span style="color: orange;">angi</span></span>
-      
-        <a href="index.html">Home</a>
-        <a href="practice.html">Practice Work</a>
+        <div style="flex-grow: 1;"></div> 
+        <a href="practice.html">Practice Pages</a>
         <a href="#projects">Projects</a>
+        <a href="#contactme">Contact Me</a>
     </div>
 
     <!-- Profile Section -->
     <div class="profile-container">
         <div class="profile-pic">
-            <img src="images/f1.jpg"> 
+            <img src="images/f1.png"> 
         </div>
         <div class="profile-info">
-            <h1>Hi, It's Shivangi</h1>
+            <h1>Hi, It's Shivangi!</h1>
             <h2>About Me</h2>
             <p>
                 I am a passionate individual with a love for creativity and design. I enjoy exploring new ideas and bringing them to life through my work. Whether it's graphic design, writing, or any other form of art, I strive to express myself and connect with others.
