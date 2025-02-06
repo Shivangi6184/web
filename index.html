@@ -39,17 +39,24 @@
             padding-bottom: 40px;
         }
         .pic {
-            width:10px;
+            
             margin-bottom: 60px;
         }
         h1 {
+           
             color: #00008b; 
             font-size: 24px;
         }
         h2 {
-            color:#008b8b ;
+            padding-top:90px;
+            color:#008b8b;
             font-size: 18px;
-            margin-top: 10px;
+            
+            }
+        h3 {
+            color:#008b8b;
+            font-size: 18px;
+            
         }
         p {
             max-width: 600px;
@@ -63,8 +70,8 @@
             color: white;
             border-radius: 25px;
             cursor: pointer;
-            transition: background-color 0.3s;
             text-decoration: none;
+            
         }
         .explore:hover {
             background-color: #00008b; 
@@ -84,7 +91,7 @@
         }
         @media (max-width: 600px) {
             .pic {
-                 width:50%; 
+                 width:100%; 
             }
             nav {
                 flex-direction: column;
@@ -97,6 +104,9 @@
             }
             h2 {
                 font-size: 16px;
+            }
+            h3 {
+                font-size: 12px;
             }
             p {
                 font-size: 12px;
@@ -117,10 +127,10 @@
 
 <div class="info">
     <div class="pic">
-    <img src="images/f2.png"> 
+    <img src="images/f2.png" style="max-width:400px;"> 
     </div>
     <h1>Hi there, I'm Shivangi</h1>
-    <h2>I'm a UX Designer</h2>
+    <h3>I'm a UX Designer</h3>
     <p>I am passionate about creating user-friendly designs that enhance user experience. I enjoy exploring new design trends and improving my skills.</p>
     
     <a href="#about-me" class="explore">Explore</a>
