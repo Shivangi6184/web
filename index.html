@@ -1,158 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  
-    <title>My Profile</title>
     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+  
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family:sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            background-color: white;
-            align-items: center;
-            height: 100vh;
-            
+            background-image: url('images/back.jpg'); 
+            background-size: cover;
+            scroll-behavior: smooth;
         }
-        /* Navigation Bar Styles */
-        .navbar {
-            background-color: #000;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            width: 100%; 
         }
-        .navbar .name {
-            color: orange; 
-            font-weight: 600;
-            margin-left: 50px; 
-        }
-        .navbar a {
+        nav a {
             color: white;
-            padding: 14px 20px;
             text-decoration: none;
-            margin-left: 20px;
+            margin:15px;
             transition: color 0.3s;
         }
-        .navbar a:hover {
-            color: orange; 
+        nav a:hover {
+            color:#00008b; 
         }
-        /* Profile Section Styles */
-        .profile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center; 
-            text-align: center; 
-            flex-grow: 1; 
-            margin-top: 20px; 
+        .header {
+            color:#00008b; 
+            font-weight: bold;
         }
-        .profile-pic {
-            margin-bottom: 20px;
+        .info {
+            text-align: center;
+            padding: 20px;
+           
         }
-        .profile-pic img {
-            width: 200px; 
-            border-radius: 50%; 
-            border: 2px solid gray;
+        .pic {
+            width:10px;
+            margin-bottom: 60px;
         }
-        .profile-info {
-            max-width: 700px; 
+        h1 {
+            color: #00008b; 
+            font-size: 24px;
         }
-        .profile-info h1 {
-            margin: 0;
-            color: orange; 
-            font-size: 2.5em; 
+        h2 {
+            color:#008b8b ;
+            font-size: 18px;
+            margin-top: 10px;
         }
-        .profile-info h2 {
-            margin: 20px 0; 
-            color: #4A4A4A; 
-            font-size: 1.5em; 
+        p {
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 14px;
         }
-        .profile-info p {
-            color: #4A4A4A; 
-            font-size: 1.1em; 
+        .explore {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color:#00008b; 
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
         }
-         /* Extra small devices (phones, 600px and down) */
-        @media only screen and (max-width: 600px) {
-            .profile-pic img {
-                width: 120px; 
-            }
-            .profile-info h1 {
-                font-size: 1.5em; 
-            }
-            .profile-info h2 {
-                font-size: 1em; 
-            }
-            .profile-info p {
-                font-size: 0.9em; 
-            }
+        .explore:hover {
+            background-color: #00008b; 
         }
-
-        /* Small devices (portrait tablets and large phones, 600px and up) */
-        @media only screen and (min-width: 600px) {
-            .profile-pic img {
-                width: 200px; 
-            }
-            .profile-info h1 {
-                font-size: 2.5em;
-            }
-            .profile-info h2 {
-                font-size: 1.5em; 
-            }
-            .profile-info p {
-                font-size: 1.1em; 
-            }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            width: 100%;
+            color: white;
         }
-
-        
-        @media only screen and (min-width: 992px) {
-            .navbar {
-                padding: 15px 30px;
+        .back{
+            display: block;
+            margin: 20px auto;
+            text-decoration: none;
+            color: white; 
+        }
+        @media (max-width: 600px) {
+            .pic {
+                 width:50%; 
+                 
             }
-            .profile-pic img {
-                width: 250px; 
+            nav {
+                flex-direction: column;
             }
-            .profile-info h1 {
-                font-size: 2.5em; 
+            nav a {
+                margin:30px;
+               
             }
-            .profile-info h2 {
-                font-size: 1.5em; 
+            h1 {
+                font-size: 20px;
             }
-            .profile-info p {
-                font-size: 1.3em; 
+            h2 {
+                font-size: 16px;
+            }
+            p {
+                font-size: 12px;
             }
         }
-       
     </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <div class="navbar">
-        <span class="name">Shiv<span style="color: orange;">angi</span></span>
-        <div style="flex-grow: 1;"></div> 
-        <a href="practice.html">Practice Work</a>
+<nav>
+    <div class="header">Shivangi</div>
+    <div>
+         <a href="practice.html">Work</a>
         <a href="#projects">Projects</a>
-        <a href="#contactme">Contact Me</a>
+        <a href="#contactme">Contact</a>
     </div>
+</nav>
 
-    <!-- Profile Section -->
-    <div class="profile">
-        <div class="profile-pic">
-            <img src="images/f1.png"> 
-        </div>
-        <div class="profile-info">
-            <h1>Hi, It's Shivangi!</h1>
-            <h2>About Me</h2>
-            <p>
-                I am a passionate individual with a love for creativity and design. I enjoy exploring new ideas and bringing them to life through my work. Whether it's graphic design, writing, or any other form of art, I strive to express myself and connect with others.
-            </p>
-        </div>
+<div class="info">
+    <div class="pic">
+    <img src="images/f2.png"> 
+    </div>
+    <h1>Hi there, I'm Shivangi</h1>
+    <h2>I'm a UX Designer</h2>
+    <p>I am passionate about creating user-friendly designs that enhance user experience. I enjoy exploring new design trends and improving my skills.</p>
     
+    <a href="#about-me" class="explore">Explore</a>
+</div>
+
+<div id="about-me" class="info">
+    <h2>About Me</h2>
+    <p>I am a student with a keen interest in UX design. I love learning about user research, wireframing, and prototyping. My goal is to create designs that are not only visually appealing but also functional and user-centered.</p>
+</div>
+
+<div class="info">
+ <h2>Skills</h2>
+    <p>I have experience with Photoshop, Illustrator, HTML & CSS, InDesign, Corel Draw, and sketching. I am always eager to learn more and improve my design skills.</p>
+</div>
+
+<footer>
+    <p>&copy; 2025 Shivangi. All rights reserved.</p>
+    <a href="#" class="back">Back to Top</a>
+</footer>
 
 </body>
 </html>
