@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Table</title>
+    <style>
+        body {
+            padding:20px;
+        }
+
+        header {
+            text-align:center;
+            font-size:30px; 
+            font-family:Arial Black;
+            margin-bottom:60px;
+        }
+
+        #container {
+            width:80%;
+            margin:auto;
+        }
+
+        table {
+            width:100%;
+            cursor:pointer;
+        }
+
+        th {
+            background-color:black;
+            color:white;
+            text-align:center;
+            padding:10px;
+            font-size:20px; 
+        }
+
+        tr:hover {
+            background-color:lightgray;
+        }
+
+        td {
+            text-align:center;
+            padding:10px;
+            transition:background-color 0.3s;
+        }
+
+        td:hover {
+            background-color:lightblue;
+        }
+
+        @media (max-width: 768px) {
+            #container {
+                width:95%;
+            }
+
+            th, td {
+                font-size:14px; 
+            }
+        }
+
+        @media (min-width:769px) {
+            th, td {
+                font-size:16px; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>Shopping List</header>
+    <div id="container">
+        <table border="1" bgcolor="#ffffff" cellpadding="1">
+        <th colspan="2">Shopping Items</th>
+           
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Apples</td>
+                <td>₹10</td>
+            </tr>
+            <tr>
+                <td>Bananas</td>
+                <td>₹8</td> 
+            </tr>
+            <tr>
+                <td>Cherries</td>
+                <td>₹15</td> 
+            </tr>
+            <tr>
+                <td>Dates</td>
+                <td>₹5</td> 
+            </tr>
+            <tr>
+                <td>Eggs</td>
+                <td>₹5</td> 
+            </tr>
+            <tr>
+                <td>Flour</td>
+                <td>₹20</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
