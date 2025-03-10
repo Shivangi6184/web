@@ -57,15 +57,24 @@
         }
         .work {
             background:#476e1f;
+            color:white;
             text-decoration: none;
             padding:18px;
             display: inline-block;
-            color:white;
             margin-top:20px;
             cursor:pointer;
            
         }
-
+             a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+             }
+            a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none; 
+            }
         .background {
             background:url('images/bkgd.jpg');
             background-size:cover;
@@ -130,14 +139,7 @@
             padding: 30px 0;
         }
 
-        a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-            a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
+
         @media (max-width: 600px) {
             .navbar, .info, .header {
                 flex-direction: column;
